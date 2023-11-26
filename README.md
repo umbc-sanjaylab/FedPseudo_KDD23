@@ -95,7 +95,7 @@ for part in ["iid", "non-iid"]:
 | Parameter                      | Description                                 |
 | ----------------------------- | ---------------------------------------- |
 | `model` | The model architecture. Options: `FedPDNN`, `FedLSTM`, `FedPAttn`. Default = `FedPDNN`. |
-| `dataset`      | Dataset to use. Options: `metabric`, `support`, `gbsg`. Default = `gbsg`. |
+| `dataset`      | Dataset to use. Options: `metabric`, `support`, `gbsg`. Default = `metabric`. |
 | `alg` | The training algorithm. Options: `fedavg`. Default = `fedavg`. |
 | `lr` | Learning rate for the local models. Default = `0.001`. |
 | `batch-size` | Batch size. Default = `128`. |
@@ -111,7 +111,7 @@ for part in ["iid", "non-iid"]:
 | `init_seed` | The initial seed. Default = `0`. |
 | `sample` | Ratio of parties that participate in each communication round. Default = `1`. |
 | `sensitivity` | Sensitivity parameter for differential privacy. Default = `2.0`. |
-| `epsilon` | Privacy budget parameter for differential privacy. Default = `1`. |
+| `epsilon` | Privacy budget parameter for differential privacy. Default = `5.5`. |
 | `is_DP` | True if differential privacy is enforced. Default = `False`. |
 
 
