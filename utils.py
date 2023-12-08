@@ -210,7 +210,7 @@ def get_local_dataset(data_directory, dataset, partition, n_parties, client_id, 
         
         
     else:
-        local_data==pd.read_csv(data_directory+dataset+'/data_{}.csv'.format(client_id+1))        
+        local_data=pd.read_csv(data_directory+dataset+'/data_{}.csv'.format(client_id+1))        
         feature_list = [x for x in local_data.columns if x not in cols_to_remove]
 
     ## Split local data into train and test set
